@@ -15,7 +15,8 @@
     "lint:hbs": "ember-template-lint .",
     "lint:js": "eslint .",
     "start": "ember serve",
-    "test": "ember test"
+    "test": "ember test",
+    "commit": "git-cz"
   },
   "devDependencies": {
     "@ember/edition-utils": "^1.1.1",
@@ -23,6 +24,7 @@
     "@glimmer/component": "^0.14.0-alpha.12",
     "babel-eslint": "^10.0.2",
     "broccoli-asset-rev": "^3.0.0",
+    "cz-conventional-changelog": "^3.0.2",
     "ember-auto-import": "^1.2.20",
     "ember-cli": "3.14.0-beta.2",
     "ember-cli-app-version": "^3.2.0",
@@ -49,5 +51,13 @@
   },
   "engines": {
     "node": "8.* || >= 10.*"
+  },
+  "dependencies": {
+    "commitizen": "^4.0.3"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
