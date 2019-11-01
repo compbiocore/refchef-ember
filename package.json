@@ -53,7 +53,7 @@
     "node": "8.* || >= 10.*"
   },
   "dependencies": {
-    "commitizen": "^4.0.3"
+    "@endemolshinegroup/cz-github": "^1.0.5"
   },
   "config": {
     "commitizen": {
