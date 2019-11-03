@@ -56,5 +56,9 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "js-base64": "^2.5.1",
+    "js-yaml": "^3.13.1"
   }
 }

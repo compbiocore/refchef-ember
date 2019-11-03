@@ -1,11 +1,10 @@
 import ApplicationSerializer from './application';
 
-export default class OrgSerializer extends ApplicationSerializer {
-  primaryKey = 'login'
-
+export default class RepositorySerializer extends ApplicationSerializer {
   normalize(type, payload) {
+    let url = payload.contents_url.replace('{+path}', '')
     payload.links = {
-      repositories: payload.repos_url
+      contents: url
     }
     return super.normalize(...arguments);
   }
