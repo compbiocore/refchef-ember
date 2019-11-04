@@ -7,4 +7,7 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function() {
+  this.route('references', function() {
+    this.route('reference', { path: '/:name' });
+  });
 });

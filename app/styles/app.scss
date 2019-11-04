@@ -1,0 +1,19 @@
+@import "variables";
+@import "ember-bootstrap/bootstrap";
+
+
+tr {
+   cursor: pointer;
+ }
+
+.file-list {
+  list-style-type: none;
+  margin-left: -1.6rem;
+  width: 150%;
+}
+
+.card {
+  height: 30vh !important;
+  width: 30vw !important;
+  overflow: scroll;
+}

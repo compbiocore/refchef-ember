@@ -1,0 +1,29 @@
+<div class="d-flex flex-column card p-3 bg-light">
+  <p class="h6">
+    <p class="text-primary">
+      <FaIcon @icon="sitemap"/>
+      <span class="pl-1">Component: {{@model.component}}</span>
+    </p>
+
+    <p class="text-primary">
+      <FaIcon @icon="fingerprint"/>
+      <span class="pl-1">UUDI:
+        <span class="text-monospace">{{@model.uuid}}</span>
+      </span>
+    </p>
+
+    <FaIcon @icon="folder" class="text-success"/>
+    <span class="text-monospace">
+      {{string-replace @model.location "/gpfs/data/shared/databases/refchef_refs/" ""}}
+    </span>
+  </p>
+
+  <ul>
+    {{#each @model.files as |file|}}
+    <li class="file-list text-monospace">
+      <FaIcon @icon="file" class="text-success"/>
+      <span class="pl-1">{{file}}</span>
+    </li>
+    {{/each}}
+  </ul>
+</div>

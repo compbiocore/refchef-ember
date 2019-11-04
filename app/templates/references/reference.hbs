@@ -1,0 +1,23 @@
+
+
+<div class="container">
+  <h1>{{model.name}}</h1>
+  <h2>{{model.organism}}</h2>
+  <h2>{{model.common_name}}</h2>
+  <h2>{{model.organization}}</h2>
+  {{#if model.levels.references}}
+  <h4>References</h4>
+  {{/if}}
+  <CardGroup @model={{model.levels.references}} />
+
+  {{#if model.levels.annotations}}
+  <h4>Annotations</h4>
+  {{/if}}
+  <CardGroup @model={{model.levels.annotations}} />
+
+  {{#if model.levels.indices}}
+  <h4>Indices</h4>
+  {{/if}}
+  <CardGroup @model={{model.levels.indices}} />
+</div>
+{{outlet}}
