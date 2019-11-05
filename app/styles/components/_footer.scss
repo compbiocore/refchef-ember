@@ -8,9 +8,14 @@
   height: 3rem;
 }
 
-.logo {
+.cbc-logo {
+  height: 3.2rem;
+  fill: $primary;
+}
+
+.ccv-logo {
+  @extend .mt-3;
   height: 2.2rem;
-  z-index: 100;
   .c1 {
     fill: $yellow;
   }

@@ -17,12 +17,18 @@ tr {
    cursor: pointer;
  }
 
+tr:hover {
+  background-color: $beige !important;
+}
+
 .file-list {
   list-style-type: none;
   margin-left: -1.6rem;
-  width: 150%;
 }
 
+.w-150 {
+  width: 150%;
+}
 
 .reference-card {
   height: 30vh !important;

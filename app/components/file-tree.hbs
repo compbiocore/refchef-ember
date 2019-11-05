@@ -1,5 +1,5 @@
 <div class="d-flex flex-column p-4 reference-card">
-  <p class="h6">
+  <p class="h6 w-150">
     <p class="text-primary">
       <FaIcon @icon="sitemap"/>
       <span class="pl-1">Component: {{@model.component}}</span>
@@ -12,7 +12,7 @@
       </span>
     </p>
 
-    <FaIcon @icon="folder" class="text-success"/>
+    <FaIcon @icon="folder-open" class="text-success"/>
     <span class="text-monospace">
       {{string-replace @model.location "/gpfs/data/shared/databases/refchef_refs" "."}}
     </span>
@@ -20,7 +20,7 @@
 
   <ul>
     {{#each @model.files as |file|}}
-    <li class="file-list text-monospace">
+    <li class="file-list text-monospace w-150">
       <FaIcon @icon="file" class="text-success"/>
       <span class="pl-1">{{file}}</span>
     </li>
