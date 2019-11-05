@@ -1,0 +1,24 @@
+.hero {
+  height: 36vh;
+  background-color: #072f2f;
+  @extend .d-flex;
+  @extend .justify-content-around;
+  @extend .align-items-center;
+  color: $green;
+  h1 {
+    font-size: 5rem;
+  }
+  h4 {
+    color: white;
+    font-size: 2rem;
+  }
+}
+.hero-art {
+  height: 30rem;
+  margin-top: 8rem;
+  -webkit-filter: drop-shadow( 1px 1px 6px $green);
+  filter: drop-shadow( 1px 1px 6px $green);
+  .st0 {
+    fill: $green !important;
+  }
+}

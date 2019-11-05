@@ -22,8 +22,13 @@ export default class ReferencesController extends Controller {
 
   actions = {
     setSortProperty(field) {
-      this.toggleProperty('sortAsc')
-      this.set('sortField', field)
+      if (field != this.sortField) {
+        this.set('sortAsc', true)
+        this.set('sortField', field)
+      }
+      else {
+        this.toggleProperty('sortAsc')
+      }
     }
   }
 }

@@ -1,10 +1,21 @@
 <div class="footer d-flex justify-content-center flex-column w-100">
   <div class="d-flex flex-row justify-content-around flex-wrap">
     <div class="d-flex flex-column">
-        {{inline-svg "images/cbc-logo" class="cbc-logo"}}
+        {{inline-svg "images/cbc-logo-type" class="cbc-logo-footer"}}
     </div>
     <div class="d-flex flex-column mb-4">
-      <a class="font-weight-bold" href="https://ccv.brown.edu">ccv.brown.edu</a>
+      <a class="font-weight-bold" href="https://cbc.brown.edu">Computational Biology Core</a>
+      <a href="https://www.brown.edu/research/projects/computational-biology-of-human-disease/home">
+        <small class="font-weight-bold">Center for Computational Biology of Human Disease</small>
+      </a>
+      <a href="https://cbc.brown.edu/about/">About</a>
+      <a href="https://cbc.brown.edu/services/">Services</a>
+      <a href="https://cbc.brown.edu/resources/">Resources</a>
+      <a href="https://medium.com/brown-compbiocore">Blog</a>
+      <a href="https://ask.cyberinfrastructure.org/c/brown-research-computing">Discourse</a>
+    </div>
+    <div class="d-flex flex-column mb-4">
+      <a class="font-weight-bold" href="https://ccv.brown.edu">Center for Computation and Visualization</a>
       <a href="https://ccv.brown.edu/about/">About</a>
       <a href="https://ccv.brown.edu/services/">Services</a>
       <a href="https://ccv.brown.edu/documentation/">Documentation</a>
@@ -16,14 +27,19 @@
         <FaIcon @icon="envelope" @prefix="fas" class="mr-2"/>
         <span>ccv@brown.edu</span>
       </a>
-      <a href="mailto:support@ccv.brown.edu">
-        <FaIcon @icon="ticket-alt" @prefix="fas" class="mr-2"/>
-        <span>support@ccv.brown.edu</span>
+      <a href="mailto:cbc-help@brown.edu">
+        <FaIcon @icon="envelope" @prefix="fas" class="mr-2"/>
+        <span>cbc-help@brown.edu</span>
       </a>
-      <a href="https://twitter.com/brown_ccv">
-        <FaIcon @icon="twitter" @prefix="fab" class="mr-2"/>
-        <span>@brown_ccv</span>
+      <a href="https://github.com/compbiocore">
+        <FaIcon @icon="github" @prefix="fab" class="mr-2"/>
+        <span>compbiocore</span>
       </a>
+      <a href="https://github.com/brown-ccv">
+        <FaIcon @icon="github" @prefix="fab" class="mr-2"/>
+        <span>brown-ccv</span>
+      </a>
+
     </div>
     <div class="d-flex flex-column">
       {{inline-svg "images/brown-logo" class="brown-logo"}}

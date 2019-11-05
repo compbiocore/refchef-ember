@@ -1,11 +1,12 @@
-
-
 <div class="container mb-5">
   <div class="my-5 d-flex justify-content-center align-items-start">
-    <div class="d-flex p-3 pr-5 text-success">
-      <FaIcon @icon="dna" @size="4x"/>
-    </div>
     <div>
+      <div class="mb-5">
+        <LinkTo @route="references">
+          <FaIcon @icon="arrow-left"/>
+          Back
+        </LinkTo>
+      </div>
       <h3>
         <span class="text-primary">Reference name:</span>
         <span>{{model.name}}</span>
