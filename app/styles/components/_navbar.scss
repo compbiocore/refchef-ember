@@ -1,0 +1,18 @@
+.navbar {
+  background-color: white !important;
+  box-shadow: 1px 1px 2px #dedede;
+}
+
+.navbar-header {
+  @extend .d-flex;
+  @extend .justify-content-between;
+  @extend .w-100;
+}
+
+@media only screen and (min-width: 600px) {
+ .navbar-header {
+   @extend .d-flex;
+   @extend .justify-content-between;
+   width: 50% !important;
+ }
+}

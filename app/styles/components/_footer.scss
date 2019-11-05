@@ -1,0 +1,23 @@
+.footer {
+  background-color: $beige;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+.brown-logo {
+  height: 3rem;
+}
+
+.logo {
+  height: 2.2rem;
+  z-index: 100;
+  .c1 {
+    fill: $yellow;
+  }
+  .c2 {
+    fill: $green;
+  }
+  .v {
+    fill: $yellow;
+  }
+}

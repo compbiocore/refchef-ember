@@ -1,6 +1,17 @@
 @import "variables";
 @import "ember-bootstrap/bootstrap";
 
+@import "components/footer";
+@import "components/navbar";
+
+body {
+  @extend .bg-light;
+}
+
+table {
+  background-color: white;
+  margin-top: 10rem;
+}
 
 tr {
    cursor: pointer;
@@ -12,8 +23,18 @@ tr {
   width: 150%;
 }
 
-.card {
+
+.reference-card {
   height: 30vh !important;
   width: 30vw !important;
   overflow: scroll;
+  background-color: white;
+  box-shadow: 1px 1px 10px #dedede;
+  @extend .rounded;
+}
+
+.ref-title {
+  @extend .py-2;
+  @extend .mt-5;
+  @extend .text-primary;
 }

@@ -1,22 +1,44 @@
 
 
-<div class="container">
-  <h1>{{model.name}}</h1>
-  <h2>{{model.organism}}</h2>
-  <h2>{{model.common_name}}</h2>
-  <h2>{{model.organization}}</h2>
+<div class="container mb-5">
+  <div class="my-5 d-flex justify-content-center align-items-start">
+    <div class="d-flex p-3 pr-5 text-success">
+      <FaIcon @icon="dna" @size="4x"/>
+    </div>
+    <div>
+      <h3>
+        <span class="text-primary">Reference name:</span>
+        <span>{{model.name}}</span>
+      </h3>
+      <h4>
+        <span class="text-primary">Organism:</span>
+        <span>{{model.organism}}</span> –
+        <span>{{model.common_name}}</span>
+      </h4>
+      <h4>
+        <span class="text-primary">Organization:</span>
+        <span>{{model.organization}}</span>
+      </h4>
+      <p class="text-primary">
+        <FaIcon @icon="server"/>
+        <span class="pl-1">Oscar directory:
+          <span class="text-monospace">/gpfs/data/shared/databases/refchef_refs</span>
+        </span>
+      </p>
+    </div>
+  </div>
   {{#if model.levels.references}}
-  <h4>References</h4>
+  <h4 class="ref-title">References</h4>
   {{/if}}
   <CardGroup @model={{model.levels.references}} />
 
   {{#if model.levels.annotations}}
-  <h4>Annotations</h4>
+  <h4 class="ref-title">Annotations</h4>
   {{/if}}
   <CardGroup @model={{model.levels.annotations}} />
 
   {{#if model.levels.indices}}
-  <h4>Indices</h4>
+  <h4 class="ref-title">Indices</h4>
   {{/if}}
   <CardGroup @model={{model.levels.indices}} />
 </div>

@@ -1,4 +1,4 @@
-<div class="d-flex flex-column card p-3 bg-light">
+<div class="d-flex flex-column p-4 reference-card">
   <p class="h6">
     <p class="text-primary">
       <FaIcon @icon="sitemap"/>
@@ -14,7 +14,7 @@
 
     <FaIcon @icon="folder" class="text-success"/>
     <span class="text-monospace">
-      {{string-replace @model.location "/gpfs/data/shared/databases/refchef_refs/" ""}}
+      {{string-replace @model.location "/gpfs/data/shared/databases/refchef_refs" "."}}
     </span>
   </p>
 
