@@ -33,6 +33,7 @@ module.exports = function(environment) {
 
   if (environment === 'test') {
     // Testem prefers this...
+    ENV.rootURL = '/refchef-ember/';
     ENV.locationType = 'none';
 
     // keep test console output quieter
@@ -45,7 +46,7 @@ module.exports = function(environment) {
 
   if (environment === 'production') {
     // here you can enable a production-specific feature
-    ENV.rootURL = '/refchef-ember/';
+    ENV.rootURL = '/refchef-view/';
   }
 
   return ENV;
