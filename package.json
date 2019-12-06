@@ -12,7 +12,9 @@
   },
   "scripts": {
     "build": "ember build",
+    "build:development": "ember build --environment development",
     "build:production": "ember build --environment production",
+    "deploy": "firebase deploy",
     "lint:hbs": "ember-template-lint .",
     "lint:js": "eslint .",
     "start": "ember serve",
@@ -69,6 +71,7 @@
     }
   },
   "dependencies": {
+    "firebase-tools": "^7.9.0",
     "js-base64": "^2.5.1",
     "js-yaml": "^3.13.1"
   }
