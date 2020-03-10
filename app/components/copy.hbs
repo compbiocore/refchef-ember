@@ -1,0 +1,17 @@
+<CopyButton @clipboardText={{@text}} @success={{this.onSuccess}} @error={{this.onError}}
+    title="copy file path to clipboard">
+    {{#if this.wasSuccessful}}
+    <FaIcon @prefix="fal" @icon="clipboard-check" /> copied!
+    {{else}}
+    {{#if this.errored}}
+    <span class="error">
+        <FaIcon @prefix="fal" @icon="file-exclamation" /> failed to copy
+    </span>
+    {{else}}
+    <span class="fa-layers">
+        <FaIcon @prefix="fal" @icon="clipboard" />
+        <FaIcon @prefix="fal" @icon="long-arrow-alt-left" @transform="shrink-2 right-4 down-1" />
+    </span>
+    {{/if}}
+    {{/if}}
+</CopyButton>

@@ -7,13 +7,17 @@ on:
 
 jobs:
   deploy:
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7fde1f07b6c9c9dc287cdef1826e9319323d48cc
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
         node-version: [12.x]
     steps:
+<<<<<<< HEAD
     - uses: actions/checkout@v1
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
@@ -29,3 +33,23 @@ jobs:
       run: npm run deploy
       env:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+=======
+      - uses: actions/checkout@v1
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: npm install
+        shell: bash
+        run: |
+          npm config set "@fortawesome:registry" https://npm.fontawesome.com/
+          npm config set "//npm.fontawesome.com/:_authToken" ${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}
+          npm install
+          npm run build:production
+        env:
+          CI: true
+      - name: Deploy to Firebase
+        run: npm run deploy
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+>>>>>>> 7fde1f07b6c9c9dc287cdef1826e9319323d48cc
