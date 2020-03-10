@@ -1,9 +1,9 @@
-@import "variables";
-@import "ember-bootstrap/bootstrap";
+@import 'variables';
+@import 'ember-bootstrap/bootstrap';
 
-@import "components/footer";
-@import "components/navbar";
-@import "components/hero";
+@import 'components/footer';
+@import 'components/navbar';
+@import 'components/hero';
 
 body {
   @extend .bg-light;
@@ -15,11 +15,11 @@ table {
 }
 
 tr {
-   cursor: pointer;
- }
+  cursor: pointer;
+}
 
 tr:hover {
-  background-color: $beige !important;
+  background-color: $beige;
 }
 
 .file-list {
@@ -32,16 +32,27 @@ tr:hover {
 }
 
 .reference-card {
-  height: 30vh !important;
-  width: 30vw !important;
-  overflow: scroll;
   background-color: white;
   box-shadow: 1px 1px 10px #dedede;
   @extend .rounded;
+  @extend .container;
 }
 
 .ref-title {
   @extend .py-2;
   @extend .mt-5;
   @extend .text-primary;
+}
+
+.copy-btn {
+  background-color: white;
+  border: 0;
+  color: $green;
+  &:hover {
+    color: $blue;
+  }
+}
+
+.error {
+  color: $red;
 }

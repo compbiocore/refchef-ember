@@ -1,28 +1,32 @@
 <div class="d-flex flex-column p-4 reference-card mb-4">
-  <p class="h6 w-150">
+  <p class="h6">
     <p class="text-primary">
-      <FaIcon @icon="sitemap"/>
+      <FaIcon @icon="sitemap" />
       <span class="pl-1">Component: {{@model.component}}</span>
     </p>
 
     <p class="text-primary">
-      <FaIcon @icon="fingerprint"/>
-      <span class="pl-1">UUID:
+      <FaIcon @icon="fingerprint" />
+      <span class="pl-1">
+        UUID:
         <span class="text-monospace">{{@model.uuid}}</span>
       </span>
+      <Copy @text={{@model.uuid}} />
     </p>
 
-    <FaIcon @icon="folder-open" class="text-success"/>
+    <FaIcon @icon="folder-open" class="text-success" />
     <span class="text-monospace">
-      {{string-replace @model.location "/gpfs/data/shared/databases/refchef_refs" "."}}
+      {{@model.location}}
     </span>
+    <Copy @text={{@model.location}} />
   </p>
 
   <ul>
     {{#each @model.files as |file|}}
-    <li class="file-list text-monospace w-150">
-      <FaIcon @icon="file" class="text-success"/>
+    <li class="file-list text-monospace">
+      <FaIcon @icon="file" class="text-success" />
       <span class="pl-1">{{file}}</span>
+      <Copy @text={{concat @model.location "/" file}} />
     </li>
     {{/each}}
   </ul>

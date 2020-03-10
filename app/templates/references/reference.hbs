@@ -3,44 +3,45 @@
     <div>
       <div class="mb-5">
         <LinkTo @route="references">
-          <FaIcon @icon="arrow-left"/>
+          <FaIcon @icon="arrow-left" />
           Back
         </LinkTo>
       </div>
       <h3>
         <span class="text-primary">Reference name:</span>
-        <span>{{model.name}}</span>
+        <span>{{@model.name}}</span>
       </h3>
       <h4>
         <span class="text-primary">Organism:</span>
-        <span>{{model.organism}}</span> –
-        <span>{{model.common_name}}</span>
+        <span>{{@model.organism}}</span> –
+        <span>{{@model.common_name}}</span>
       </h4>
       <h4>
         <span class="text-primary">Organization:</span>
-        <span>{{model.organization}}</span>
+        <span>{{@model.organization}}</span>
       </h4>
       <p class="text-primary">
-        <FaIcon @icon="server"/>
-        <span class="pl-1">Oscar directory:
+        <FaIcon @icon="server" />
+        <span class="pl-1">
+          Oscar directory:
           <span class="text-monospace">/gpfs/data/shared/databases/refchef_refs</span>
         </span>
       </p>
     </div>
   </div>
-  {{#if model.levels.references}}
+  {{#if @model.levels.references}}
   <h4 class="ref-title">References</h4>
   {{/if}}
-  <CardGroup @model={{model.levels.references}} />
+  <CardGroup @model={{@model.levels.references}} />
 
-  {{#if model.levels.annotations}}
+  {{#if @model.levels.annotations}}
   <h4 class="ref-title">Annotations</h4>
   {{/if}}
-  <CardGroup @model={{model.levels.annotations}} />
+  <CardGroup @model={{@model.levels.annotations}} />
 
-  {{#if model.levels.indices}}
+  {{#if @model.levels.indices}}
   <h4 class="ref-title">Indices</h4>
   {{/if}}
-  <CardGroup @model={{model.levels.indices}} />
+  <CardGroup @model={{@model.levels.indices}} />
 </div>
 {{outlet}}
