@@ -1,5 +1,5 @@
 <div class="d-flex flex-column p-4 reference-card mb-4">
-  <p class="h6 w-150">
+  <p class="h6">
     <p class="text-primary">
       <FaIcon @icon="sitemap" />
       <span class="pl-1">Component: {{@model.component}}</span>
@@ -23,7 +23,7 @@
 
   <ul>
     {{#each @model.files as |file|}}
-    <li class="file-list text-monospace w-150">
+    <li class="file-list text-monospace">
       <FaIcon @icon="file" class="text-success" />
       <span class="pl-1">{{file}}</span>
       <Copy @text={{concat @model.location "/" file}} />

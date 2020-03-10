@@ -3,7 +3,7 @@
     <p class="h5">Click on the rows for more details about each genome reference.</p>
     <p class="h5">Genome references are located on Oscar's GPFS:</p>
     <p class="text-primary">
-      <FaIcon @icon="server"/>
+      <FaIcon @icon="server" />
       <span class="pl-1">Oscar directory:
         <span class="text-monospace">/gpfs/data/shared/databases/refchef_refs</span>
       </span>
@@ -16,7 +16,7 @@
           <div class="d-flex justify-content-between align-items-center">
             <span>References</span>
             <a role="button" {{action "setSortProperty" "name"}}>
-              <FaIcon @icon="sort"/>
+              <FaIcon @icon="sort" />
             </a>
           </div>
         </th>
@@ -24,7 +24,7 @@
           <div class="d-flex justify-content-between align-items-center">
             <span>Organism</span>
             <a role="button" {{action "setSortProperty" "organism"}}>
-              <FaIcon @icon="sort"/>
+              <FaIcon @icon="sort" />
             </a>
           </div>
         </th>
@@ -32,7 +32,7 @@
           <div class="d-flex justify-content-between align-items-center">
             <span>Common Name</span>
             <a role="button" {{action "setSortProperty" "common_name"}}>
-              <FaIcon @icon="sort"/>
+              <FaIcon @icon="sort" />
             </a>
           </div>
         </th>
@@ -40,7 +40,7 @@
           <div class="d-flex justify-content-between align-items-center">
             <span>Organization</span>
             <a role="button" {{action "setSortProperty" "organization"}}>
-              <FaIcon @icon="sort"/>
+              <FaIcon @icon="sort" />
             </a>
           </div>
         </th>
@@ -48,7 +48,7 @@
     </thead>
     <tbody>
       {{#each sortedReferences as |ref|}}
-      <LinkTo @route="references.reference" @model={{ref.name}} @tagName="tr">
+      <LinkTo @route="references.reference" @query={{hash name=ref.name}} @tagName="tr">
         <td scope="row">{{ref.name}}</td>
         <td>{{ref.organism}}</td>
         <td>{{ref.common_name}}</td>
