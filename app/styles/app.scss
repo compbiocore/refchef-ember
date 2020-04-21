@@ -4,6 +4,7 @@
 @import 'components/footer';
 @import 'components/navbar';
 @import 'components/hero';
+@import 'components/input';
 
 body {
   @extend .bg-light;
@@ -20,6 +21,7 @@ tr {
 
 tr:hover {
   background-color: $beige;
+  text-decoration: underline;
 }
 
 .file-list {

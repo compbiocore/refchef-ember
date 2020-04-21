@@ -1,0 +1,11 @@
+.input {
+    width: 100%;
+}
+.input-inline-wrapper {
+    @extend .d-flex;
+    @extend .align-items-center;
+}
+.filter-icon {
+    color: $success;
+    margin-left: 1rem;
+}
