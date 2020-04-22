@@ -45,15 +45,21 @@
           </div>
         </th>
       </tr>
+      <tr>
+        <th><div class="input-inline-wrapper"><Input @value={{this.filterNameString}} class="input" type="text" /><FaIcon class="filter-icon" @icon="filter" /></div></th>
+        <th><div class="input-inline-wrapper"><Input @value={{this.filterOrganismString}} class="input" type="text" /><FaIcon class="filter-icon" @icon="filter" /></div></th>
+        <th><div class="input-inline-wrapper"><Input @value={{this.filterCommonNameString}} class="input" type="text" /><FaIcon class="filter-icon" @icon="filter" /></div></th>
+        <th><div class="input-inline-wrapper"><Input @value={{this.filterOrganizationString}} class="input" type="text" /><FaIcon class="filter-icon" @icon="filter" /></div></th>
+      </tr>
     </thead>
     <tbody>
-      {{#each sortedReferences as |ref|}}
-      <LinkTo @route="references.reference" @query={{hash name=ref.name}} @tagName="tr">
-        <td scope="row">{{ref.name}}</td>
-        <td>{{ref.organism}}</td>
-        <td>{{ref.common_name}}</td>
-        <td>{{ref.organization}}</td>
-      </LinkTo>
+      {{#each this.filteredSamples as |ref|}}
+        <LinkTo @route="references.reference" @query={{hash name=ref.name}} @tagName="tr">
+          <td scope="row">{{ref.name}}</td>
+          <td>{{ref.organism}}</td>
+          <td>{{ref.common_name}}</td>
+          <td>{{ref.organization}}</td>
+        </LinkTo>
       {{/each}}
 
     </tbody>
