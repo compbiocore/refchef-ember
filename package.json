@@ -28,7 +28,6 @@
     "@fortawesome/free-brands-svg-icons": "^5.11.2",
     "@fortawesome/free-regular-svg-icons": "^5.11.2",
     "@fortawesome/free-solid-svg-icons": "^5.11.2",
-    "@fortawesome/pro-light-svg-icons": "^5.12.1",
     "@glimmer/component": "^0.14.0-alpha.12",
     "babel-eslint": "^10.0.2",
     "bootstrap": "^4.3.1",
