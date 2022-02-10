@@ -56,7 +56,7 @@ RUN wget http://nodejs.org/dist/v16.13.2/node-v16.13.2.tar.gz \
         && make install
 
 
-COPY . /home/refchef-ember
+#COPY . /home/refchef-ember
 
 #RUN apt-get update && \
 #        apt-get -y --no-install-recommends install --fix-missing \
