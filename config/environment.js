@@ -43,10 +43,15 @@ module.exports = function(environment) {
     ENV.APP.rootElement = '#ember-testing'
     ENV.APP.autoboot = false
   }
-
+//https://emberobserver.com/addons/ember-metrics
   if (environment === 'production') {
-    // here you can enable a production-specific feature
-  }
-
+    ENV.metricsAdapters = [
+        {
+          name: 'GoogleAnalytics',
+          environments: ['production'],
+          config: {id: 'G-CYYFV653CM'}
+        }
+      ]
+    }
   return ENV
 }
