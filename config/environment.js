@@ -49,7 +49,7 @@ module.exports = function(environment) {
         {
           name: 'GoogleAnalytics',
           environments: ['production'],
-          config: {id: 'UA-115983496-1'}
+          config: {id: 'G-CYYFV653CM'}
         }
       ]
     }
