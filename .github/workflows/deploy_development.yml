@@ -31,6 +31,10 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
           branch: gh-pages
+          base_branch: develop
+          folder: dist
+          access_token: ${{ secrets.ACCESS_TOKEN }}
+          build_script: npm install && npm run build:development # The build script the action should run prior to deploying.
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BASE_BRANCH: develop # The branch the action should deploy from.
