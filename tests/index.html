@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     
-<meta name="refchef-ember/config/environment" content="%7B%22modulePrefix%22%3A%22refchef-ember%22%2C%22environment%22%3A%22test%22%2C%22rootURL%22%3A%22%2F%22%2C%22locationType%22%3A%22none%22%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%7D%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_JQUERY_INTEGRATION%22%3Afalse%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%2C%22APP%22%3A%7B%22LOG_ACTIVE_GENERATION%22%3Afalse%2C%22LOG_VIEW_LOOKUPS%22%3Afalse%2C%22rootElement%22%3A%22%23ember-testing%22%2C%22autoboot%22%3Afalse%2C%22name%22%3A%22refchef-ember%22%2C%22version%22%3A%220.0.0%2Be3f1df88%22%7D%2C%22exportApplicationGlobal%22%3Atrue%2C%22isModuleUnification%22%3Afalse%7D" />
+<meta name="refchef-ember/config/environment" content="%7B%22modulePrefix%22%3A%22refchef-ember%22%2C%22environment%22%3A%22test%22%2C%22rootURL%22%3A%22%2F%22%2C%22locationType%22%3A%22none%22%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%7D%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_JQUERY_INTEGRATION%22%3Afalse%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%2C%22APP%22%3A%7B%22LOG_ACTIVE_GENERATION%22%3Afalse%2C%22LOG_VIEW_LOOKUPS%22%3Afalse%2C%22rootElement%22%3A%22%23ember-testing%22%2C%22autoboot%22%3Afalse%2C%22name%22%3A%22refchef-ember%22%2C%22version%22%3A%220.0.0%2B861b98b4%22%7D%2C%22exportApplicationGlobal%22%3Atrue%7D" />
     
 
     <link rel="stylesheet" href="/assets/vendor.css">
@@ -34,6 +34,12 @@
     <script src="/assets/tests.js"></script>
 
     
-    <script>Ember.assert('The tests file was not loaded. Make sure your tests index.html includes "assets/tests.js".', EmberENV.TESTS_FILE_LOADED);</script>
+    <script>
+document.addEventListener('DOMContentLoaded', function() {
+  if (!EmberENV.TESTS_FILE_LOADED) {
+    throw new Error('The tests file was not loaded. Make sure your tests index.html includes "assets/tests.js".');
+  }
+});
+</script>
   </body>
 </html>

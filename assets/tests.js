@@ -6,9 +6,9 @@ define("refchef-ember/tests/helpers/ember-cli-clipboard", ["exports", "ember-cli
   Object.defineProperty(_exports, "__esModule", {
     value: true
   });
-  _exports.triggerSuccess = triggerSuccess;
-  _exports.triggerError = triggerError;
   _exports.default = _default;
+  _exports.triggerError = triggerError;
+  _exports.triggerSuccess = triggerSuccess;
 
   var getOwnerFromContext = function getOwnerFromContext(c) {
     return c.container || c.owner;
@@ -64,12 +64,8 @@ define("refchef-ember/tests/integration/components/card-group-test", ["qunit", "
 
   (0, _qunit.module)('Integration | Component | card-group', function (hooks) {
     (0, _emberQunit.setupRenderingTest)(hooks);
-    (0, _qunit.test)('it renders',
-    /*#__PURE__*/
-    function () {
-      var _ref2 = _asyncToGenerator(
-      /*#__PURE__*/
-      regeneratorRuntime.mark(function _callee(assert) {
+    (0, _qunit.test)('it renders', /*#__PURE__*/function () {
+      var _ref2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(assert) {
         return regeneratorRuntime.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
@@ -129,12 +125,8 @@ define("refchef-ember/tests/integration/components/copy-test", ["qunit", "ember-
 
   (0, _qunit.module)('Integration | Component | copy', function (hooks) {
     (0, _emberQunit.setupRenderingTest)(hooks);
-    (0, _qunit.test)('it renders',
-    /*#__PURE__*/
-    function () {
-      var _ref2 = _asyncToGenerator(
-      /*#__PURE__*/
-      regeneratorRuntime.mark(function _callee(assert) {
+    (0, _qunit.test)('it renders', /*#__PURE__*/function () {
+      var _ref2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(assert) {
         return regeneratorRuntime.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
@@ -194,12 +186,8 @@ define("refchef-ember/tests/integration/components/file-tree-test", ["qunit", "e
 
   (0, _qunit.module)('Integration | Component | file-tree', function (hooks) {
     (0, _emberQunit.setupRenderingTest)(hooks);
-    (0, _qunit.test)('it renders',
-    /*#__PURE__*/
-    function () {
-      var _ref2 = _asyncToGenerator(
-      /*#__PURE__*/
-      regeneratorRuntime.mark(function _callee(assert) {
+    (0, _qunit.test)('it renders', /*#__PURE__*/function () {
+      var _ref2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(assert) {
         return regeneratorRuntime.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
@@ -259,12 +247,8 @@ define("refchef-ember/tests/integration/components/footer-test", ["qunit", "embe
 
   (0, _qunit.module)('Integration | Component | footer', function (hooks) {
     (0, _emberQunit.setupRenderingTest)(hooks);
-    (0, _qunit.test)('it renders',
-    /*#__PURE__*/
-    function () {
-      var _ref2 = _asyncToGenerator(
-      /*#__PURE__*/
-      regeneratorRuntime.mark(function _callee(assert) {
+    (0, _qunit.test)('it renders', /*#__PURE__*/function () {
+      var _ref2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(assert) {
         return regeneratorRuntime.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
@@ -324,12 +308,8 @@ define("refchef-ember/tests/integration/components/hero-test", ["qunit", "ember-
 
   (0, _qunit.module)('Integration | Component | hero', function (hooks) {
     (0, _emberQunit.setupRenderingTest)(hooks);
-    (0, _qunit.test)('it renders',
-    /*#__PURE__*/
-    function () {
-      var _ref2 = _asyncToGenerator(
-      /*#__PURE__*/
-      regeneratorRuntime.mark(function _callee(assert) {
+    (0, _qunit.test)('it renders', /*#__PURE__*/function () {
+      var _ref2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(assert) {
         return regeneratorRuntime.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
@@ -389,12 +369,8 @@ define("refchef-ember/tests/integration/components/nav-test", ["qunit", "ember-q
 
   (0, _qunit.module)('Integration | Component | nav', function (hooks) {
     (0, _emberQunit.setupRenderingTest)(hooks);
-    (0, _qunit.test)('it renders',
-    /*#__PURE__*/
-    function () {
-      var _ref2 = _asyncToGenerator(
-      /*#__PURE__*/
-      regeneratorRuntime.mark(function _callee(assert) {
+    (0, _qunit.test)('it renders', /*#__PURE__*/function () {
+      var _ref2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(assert) {
         return regeneratorRuntime.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
@@ -455,12 +431,8 @@ define("refchef-ember/tests/integration/helpers/split-string-test", ["qunit", "e
   (0, _qunit.module)('Integration | Helper | split-string', function (hooks) {
     (0, _emberQunit.setupRenderingTest)(hooks); // Replace this with your real tests.
 
-    (0, _qunit.test)('it renders',
-    /*#__PURE__*/
-    function () {
-      var _ref2 = _asyncToGenerator(
-      /*#__PURE__*/
-      regeneratorRuntime.mark(function _callee(assert) {
+    (0, _qunit.test)('it renders', /*#__PURE__*/function () {
+      var _ref2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(assert) {
         return regeneratorRuntime.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
@@ -504,12 +476,8 @@ define("refchef-ember/tests/integration/helpers/string-replace-test", ["qunit", 
   (0, _qunit.module)('Integration | Helper | string-replace', function (hooks) {
     (0, _emberQunit.setupRenderingTest)(hooks); // Replace this with your real tests.
 
-    (0, _qunit.test)('it renders',
-    /*#__PURE__*/
-    function () {
-      var _ref2 = _asyncToGenerator(
-      /*#__PURE__*/
-      regeneratorRuntime.mark(function _callee(assert) {
+    (0, _qunit.test)('it renders', /*#__PURE__*/function () {
+      var _ref2 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(assert) {
         return regeneratorRuntime.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
